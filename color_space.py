@@ -5,13 +5,10 @@ import numpy as np
 from skimage.color import rgb2lab, lab2rgb
 from pathlib import Path
 import math
-import torch
-import torch.nn.functional as F
-import torchvision.transforms as T
 import cv2
 from PIL import Image
 
-from image_utils import (
+from utils import (
     load_image,
     show_image,
     _to_pil,

@@ -1,22 +1,22 @@
-# Paper Summary
-- [Colorful Image Colorization](https://arxiv.org/pdf/1603.08511.pdf)
-## Related Works
+# 'Colorful Image Colorization' (Richard Zhang et al., 2016) (partial) implementation
+## Paper Reading
+- [Colorful Image Colorization](https://github.com/KimRass/Colorful-Image-Colorization/blob/main/papers/colorful_image_colorization.pdf)
+## Empirical Probability Distribution
+- On VOC2012 dataset
+    - <img src="https://github.com/KimRass/Colorful-Image-Colorization/assets/67457712/5ea1c250-6f0d-4e8d-9135-81705b0b1d26" width="600">
+<!-- ## Related Works
 - Previous works have trained convolutional neural networks (CNNs) to predict color on large datasets. However, ***the results from these previous attempts tend to look desaturated.*** One explanation is that use loss functions that encourage conservative predictions. These losses are inherited from standard regression problems, where ***the goal is to minimize Euclidean error between an estimate and the ground truth.***
 ## Introduction
 - Given the lightness channel $L$, our system predicts the corresponding $a$ and $b$ color channels of the image in the CIELAB colorspace. ***Predicting color has the nice property that training data is practically free: any color photo can be used as a training example, simply by taking the image’s L\* channel as input and its a\*b\* channels as the supervisory signal.***
 ## Architecture
-- Figure 2
-    - <img src="https://user-images.githubusercontent.com/105417680/228839815-080cba72-b815-4b9a-95d9-8c3c9135f148.png" width="800">
-- Table 4
-    - <img src="https://user-images.githubusercontent.com/105417680/228840531-b60c8aa5-176b-47cc-9995-31be345d6357.png" width="400">
-    - 'X': Spatial resolution of output
-    - 'C': Number of channels of output
-    - 'S': Computation stride, values greater than 1 indicate downsampling following convolution, values less than 1 indicate upsampling preceding convolution
-    - 'D': Kernel dilation
-    <!-- - 'Sa': Accumulated stride across all preceding layers (product over all strides in previous layers)
-    - 'De' Effective dilation of the layer with respect to the input (layer dilation times accumulated stride) -->
-    - 'BN' Whether BatchNorm layer was used after layer
-    - 'L': Whether a 1 x 1 conv and cross-entropy loss layer was imposed
+- 'X': Spatial resolution of output
+- 'C': Number of channels of output
+- 'S': Computation stride, values greater than 1 indicate downsampling following convolution, values less than 1 indicate upsampling preceding convolution
+- 'D': Kernel dilation
+- 'Sa': Accumulated stride across all preceding layers (product over all strides in previous layers)
+- 'De' Effective dilation of the layer with respect to the input (layer dilation times accumulated stride)
+- 'BN' Whether BatchNorm layer was used after layer
+- 'L': Whether a 1 x 1 conv and cross-entropy loss layer was imposed
 ## Training
 ### Loss
 - Given an input lightness channel $X \in \mathbb{R}^{H \times W \times 1}$, our objective is to learn a mapping $\hat{Y} = F(X)$ to the two associated color channels $Y \in \mathbb{R}^{H \times W \times 2}$, where $H$, $W$ are image dimensions. (We denote predictions with a $\hat{\cdot}$ symbol and ground truth without.)
@@ -71,7 +71,6 @@ $$f(x, y) = \frac{1}{2\pi\sigma^{2}}\exp\bigg(-\frac{(x - \mu_{x})^{2} + (x - \m
 - [5] [Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/pdf/1409.1556.pdf)
 - [22] [Learning Large-Scale Automatic Image Colorization](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Deshpande_Learning_Large-Scale_Automatic_ICCV_2015_paper.pdf)
 - [23] [Learning Representations for Automatic Colorization](https://arxiv.org/pdf/1603.06668.pdf)
-
 # TO DO
 ## PyTorch Implementation
-- Loss function 구현
+- Loss function 구현 -->
