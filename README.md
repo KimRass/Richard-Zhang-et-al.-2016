@@ -1,9 +1,9 @@
 # 'Colorful Image Colorization' (Richard Zhang et al., 2016) (partial) implementation
-## Paper Reading
-- [Colorful Image Colorization](https://github.com/KimRass/Colorful-Image-Colorization/blob/main/papers/colorful_image_colorization.pdf)
-## Empirical Probability Distribution
-- On VOC2012 dataset
-    - <img src="https://github.com/KimRass/Colorful-Image-Colorization/assets/67457712/5ea1c250-6f0d-4e8d-9135-81705b0b1d26" width="600">
+
+# 1. Empirical Probability Distribution (on VOC2012)
+|Empirical probability distribution of VOC2012 training data|
+|-|
+|<img src="https://github.com/KimRass/Colorful-Image-Colorization/assets/67457712/5ea1c250-6f0d-4e8d-9135-81705b0b1d26" width="500">|
 <!-- ## Related Works
 - Previous works have trained convolutional neural networks (CNNs) to predict color on large datasets. However, ***the results from these previous attempts tend to look desaturated.*** One explanation is that use loss functions that encourage conservative predictions. These losses are inherited from standard regression problems, where ***the goal is to minimize Euclidean error between an estimate and the ground truth.***
 ## Introduction
