@@ -1,7 +1,7 @@
 # 'Colorful Image Colorization' (Richard Zhang et al., 2016) (partial) implementation
 
 # 1. Empirical Probability Distribution (on VOC2012)
-|Empirical probability distribution of VOC2012 training data|
+|Visualzation of empirical probability distribution of VOC2012 training data|
 |-|
 |<img src="https://github.com/KimRass/Colorful-Image-Colorization/assets/67457712/5ea1c250-6f0d-4e8d-9135-81705b0b1d26" width="500">|
 <!-- ## Related Works
